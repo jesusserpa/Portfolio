@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(0, 0, 0); ;
+    color: white;
+    height: 100vh;
+
+}
+
+/* NAVBAR */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(165, 163, 163);
+    font-size: 1 rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+a:hover {
+    color: #FF7C00;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar .logo a img{
+    height: 70px;
+    width: 70px;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toogle_btn {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action-btn {
+    background-color: #FF7C00;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2 ease;
+}
+
+.action-btn:hover {
+    scale: 1.05;
+    color: white;
+}
+
+.action-btn:active {
+    scale: 0.95;
+}
+
+/* INICIO */
+
+.principal {
+    display: flex;
+    background-color: black;
+    
+}
+
+.saludo {
+    width: 70%; 
+    padding-top: 120px; 
+    padding-left: 100px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #BD6F22 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 34px;
+}
+
+.imagen {
+    width: 30%;
+    padding-left: 80px;
+}
+
+.sobre {
+    text-align: justify; 
+    width: 70%; 
+    margin-left: 15%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titleProjects {
+    text-align: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #BD6F22 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 47px;
+    letter-spacing: normal;
+    padding-bottom: 50px;
+}
+
+.proyecto1 {
+    background-color: rgb(30 30 30 / 86%);
+    padding: 30px;
+    border-radius: 30px;   
+    margin: 20px; 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.github {
+    width: 50px;
+    padding-top: 30px;
+    
+}
+
+.arrow {
+    width: 50px;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
+.proyecto2 {
+    background-color: rgb(30 30 30 / 86%);
+    padding: 30px;
+    border-radius: 30px;
+    margin: 20px;  
+}
+
+.proyecto3 {
+    background-color: rgb(30 30 30 / 86%);
+    padding: 30px;
+    border-radius: 30px;
+    margin: 20px;
+        
+}
+
+.contactMe{
+    margin: 1%;
+    width: 98%;
+    background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #BD6F22 100%);
+    border-radius: 50px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 47px;
+    padding: 20px;
+}
+
+.wave-container {  
+    height: 40vh;
+    background-color: #000000;
+    position: relative;
+  }
+  
+  .wave-container::before {   
+    content: "";
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    bottom: -0.3%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 25vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 1C19.5523 3 32.2291 5 51.5 9C104.5 19 200 43 300 65C400 88 500 111 600 102C700 93 800 53 900 30C987.526 5 1085.36 -1 1150 0C1169.54 -1 1180.49 0 1200 1V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V1.98128Z' fill='%23df6106'/></svg>");
+  }
+  
+  @media(max-width:850px) {
+    .wave-container::before {    
+      height: 65px
+    }  
+  }
