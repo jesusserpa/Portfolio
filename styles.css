@@ -461,11 +461,13 @@ footer a {
 
     .saludo h1 {
         margin: 0px;
+        font-size: 120%;
     }
 
     
     .saludo h2 {
         margin: 0px;
+        font-size: 120%;
     }
 
     .proyecto1 {
@@ -486,6 +488,14 @@ footer a {
 
     .contactMe {
         width: 90%;
+    }
+
+    .titleContact {
+        font-size: 89%;
+    }
+
+    .form h5 {
+        font-size: 65.7%;
     }
 }
   
