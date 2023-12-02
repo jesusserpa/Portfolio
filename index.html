@@ -25,23 +25,47 @@
                     <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="#">Blog (Pronto)</a></li>
                 </ul>
-                <a href="#contact" class="action-btn">Contactame</a>
+                <a href="#contact" class="action-btn">Contáctame</a>
                 <div class="toogle_btn"><i class="fa-solid fa-bars"></i></div>
             </div>
+
+            <div class="dropdown_menu">
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#">Blog (Pronto)</a></li>
+                <li><a href="#contact" class="action-btn">Contáctame</a></li>
+
+            </div>
+
         </header>
+
+        <script>
+            const toogleBtn = document.querySelector('.toogle_btn')
+            const toogleBtnIcon = document.querySelector('.toogle_btn i')
+            const dropDownMenu = document.querySelector('.dropdown_menu')
+
+            toogleBtn.onclick = function () {
+                dropDownMenu.classList.toggle('open')
+                const isOpen = dropDownMenu.classList.contains('open')
+
+                toogleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark'
+                :'fa-solid fa-bars'  
+            }
+        </script>
 
         <section id="home">
 
             <div class="principal" style="display: flex;">
 
-                <div class="saludo" style="width: 60%;">
+                <div class="saludo">
     
-                    <h1 style="margin: 50px 0px 0px 50px;">Hola! Soy Jesus Serpa,</h1>
-                    <h2 style="margin: 20px 0px 0px 50px;"><b>Desarrollador de Software &#128640</b></h2>
+                    <h1>¡Hola! Soy Jesus Serpa,</h1>
+                    <h2><b>Desarrollador de Software &#128640</b></h2>
     
                 </div>
                 
-                <div class="imagen" style="width: 40%;">
+                <div class="imagen">
                     <img src="imagenes/memoji.png" alt="" width="100%" style="border-radius: 200px; 
                     padding-left: 0% ;
                     margin-top: 80px;">
